@@ -11,14 +11,17 @@ public class ProjectModel {
 	@Id
 	private String ProjectId;
 	
-	@Column(name="ProjectName", nullable = false)
+	@Column(name="project_name", nullable = false)
 	private String ProjectName;
 	
-	@Column(name="ProjectStartDate", nullable = false)
+	@Column(name="project_start_date", nullable = false)
 	private String ProjectStartDate;
 	
-	@Column(name="ProjectEndDate", nullable = false)
+	@Column(name="project_end_date", nullable = false)
 	private String ProjectEndDate;
+
+	@Column(name="project_percent", nullable=false)
+	private String ProjectPercent;
 	
 	
 	public ProjectModel() {
